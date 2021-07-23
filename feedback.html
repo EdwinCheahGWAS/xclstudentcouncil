@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <ul class="box">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    
+    <nav>
+        <a href="/index.html"><img src="/favicon-32x32.png" alt="logo"></a>
+        <div class="menupages" id="menupages">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">MEMBERS</a></li>
+            <li><a href="#">UPDATES</a></li>
+            <li><a href="#">EVENTS</a></li>
+            <li><a href="#">FEEDBACK</a></li>
+            <li><a href="#">FOLLOW US</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+      </nav>
+    
+    <div class="container">
+      <div class="title">
+        Student Council Feedback Form
+      </div>
+    <form action="https://formspree.io/f/xgerlqzb" method="POST" id="my-form">
+      <div class="form">
+        
+        <div class="inputfield">
+<label>Name</label>
+        <input id="name" name="name" type="text" class="input" required>
+        </div>
+        
+        <div class="inputfield">
+<label>Homeroom</label>
+        <input id="homeroom" name="homeroom" type="text" class="input" required>
+        </div>
+        
+        <div class="inputfield">
+<label>Suggestion</label>
+          <textarea id="suggestion" name="suggestion" class="textarea" class="input" required></textarea>
+        </div>
+        
+        <div class="inputfield">
+<label>Extra Comments</label>
+        <input id="extra-comments" name="extra-comments" type="text" class="input">
+        </div>
+        
+        <button type="submit">Submit</button>
+    </div>
+      </form>
+    </div>
+      <script>
+    var menupages = document.getElementById("menupages");
+    
+    function showMenu(){
+      menupages.style.right = "0" ;
+    }
+    function hideMenu(){
+      menupages.style.right = "-200px" ;
+    }
+    </script>
+  </body>
+</html>
