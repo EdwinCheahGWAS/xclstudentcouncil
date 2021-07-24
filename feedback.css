@@ -145,7 +145,7 @@ body{
 nav .fa{
   display:none;
 }
-@media (max-width:420px) {
+@media (max-width:1000px) {
   .container .form .inputfield{
     flex-direction: column;
     align-items: flex-start;
