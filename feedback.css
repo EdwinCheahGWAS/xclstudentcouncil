@@ -323,4 +323,12 @@ nav img{
     .menupages ul{
       padding: 30px;
     } 
+  
+  .container .title{
+    font-size: 50px;
+  }
+  
+  .container .form .inputfield label{
+  font-size: 25px;
+}
 }
