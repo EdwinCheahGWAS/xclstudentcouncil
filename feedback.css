@@ -291,6 +291,11 @@ nav img{
   .container .form .inputfield label{
     margin-bottom: 5px;
   }
+  
+  .container{
+    top: 50%;
+  }
+  
   .container .form .inputfield.terms{
     flex-direction: row;
   }
