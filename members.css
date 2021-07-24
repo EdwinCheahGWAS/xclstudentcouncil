@@ -57,6 +57,10 @@
   bottom: 20px;
 }
 
+nav img{
+  width: 50px.
+}
+
 @keyframes animate{
   0%{
     background-position-x: 0;
