@@ -292,8 +292,8 @@ nav img{
     margin-bottom: 5px;
   }
   
-  .container{
-    top: 50%;
+  .container {
+  margin-top: 200px;
   }
   
   .container .form .inputfield.terms{
