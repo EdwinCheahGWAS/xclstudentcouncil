@@ -231,6 +231,10 @@ nav .fa{
     transition: 1s;
   }
   
+  .individual{
+  width: 180px;
+  height: 180;x;
+  }
     nav .fa{
       display: block;
       color: #fff;
