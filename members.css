@@ -233,7 +233,7 @@ nav .fa{
   
   .individual{
   width: 180px;
-  height: 180;x;
+  height: 180px;
   }
     nav .fa{
       display: block;
@@ -246,7 +246,9 @@ nav .fa{
     .menupages ul{
       padding: 30px;
     } 
-  
+  .menupages ul a{
+  font-size: 30px;
+  }
     .team{
     justify-content: center;
     align-items: center;
