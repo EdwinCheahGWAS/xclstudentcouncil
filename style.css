@@ -118,9 +118,6 @@ nav .fa{
 }
 
 @media(max-width: 1000px){
-  .text h1{
-    font-size: 20px;
-  }
   
   .menu-pages ul li{
     display: block;
@@ -129,7 +126,7 @@ nav .fa{
   .menupages{
     position: absolute;
     background: #ff0000;
-    height: 100vh;
+    height: 50vh;
     width: 200px;
     top: 0;
     right: -200px;
