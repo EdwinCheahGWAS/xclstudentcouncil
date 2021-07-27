@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins"
+}
+
+.header{
+  min-height: 60vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(https://xcledu.com/wp-content/uploads/overlay-school-gems-placeholder-m.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center
+}
+
+nav img{
+  width: 50px;
+}
+
+.menupages{
+  flex: 1;
+  text-align: right;
+}
+
+.menupages ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.menupages ul li::after{
+  content:'';
+  width: 0%;
+  height: 2px;
+  background: #ff0000;
+  display: block;
+  margin: auto;
+  transition: 0.6s;
+}
+
+.menupages ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.menupages ul li:hover::after{
+  width: 100%;
+}
+
+.text{
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.text h1{
+  font-size: 40px;
+}
+
+.text p{
+  margin: 10px 0 40px;
+  font-size: 20px;
+}
+
+.button{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  margin: 10px;
+  padding: 10px 30px;
+  font-size: 20px;
+  border-radius: 30px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.button span{
+  position: absolute;
+  display: block;
+  width: 0px;
+  height: 0px;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  background: #ff0000;
+  transition: width 0.8s, height 0.8s;
+  z-index: -1;
+}
+
+.button:hover{
+  transition: 0.8s ease;  
+}
+
+.button:hover span{
+  width: 1000px;
+  height: 1000px;
+}
+
+nav .fa{
+  display: none;
+}
+
+@media(max-width: 1000px){
+  
+  .menu-pages ul li{
+    display: block;
+  }
+  
+  .menupages{
+    position: absolute;
+    background: #ff0000;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  
+    nav .fa{
+      display: block;
+      color: #fff;
+      margin: 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    
+    .menupages ul{
+      padding: 30px;
+    } 
+  
+  .menupages ul a{
+  font-size: 30px;
+  }
+  
+    .row{
+    flex-direction: column;
+    }
+  }
+
+.bts{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  background: #fff;
+}
+
+.bts-col{
+  flex-basis: 31%;
+  border-radius: 10px;
+  padding: 20px 10px;
+  margin-bottom: 5%;
+  text-align: center;
+  color: #fff;
+  background: #ff0000; 
+  transition: 0.5s;
+  box-sizing: border-box;
+}
+
+.bts-col:hover{
+  box-shadow: 0 0 40px 0px rgba(0,0,0,0.6);
+}
+
+.bts h1{
+  color: #ff0000;
+  font-size: 30px;
+}
+
+.bts-col img{
+  width: 100%;
+  border-radius: 10px;
+}
+.bts-col p{
+  padding: 0;
+}
+
+.bts-col h3{
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+.row{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.updates{
+  color: #fff;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-top: 100px;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("/Untitled design (1).png");
+  border-radius: 10px;
+}
+
+.updates img{
+  width: 50%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  margin: 10px;
+  padding: 10px 30px;
+  font-size: 16px;
+  border-radius: 30px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn span{
+  position: absolute;
+  display: block;
+  width: 0px;
+  height: 0px;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  background: #ff0000;
+  transition: width 0.8s, height 0.8s;
+  z-index: -2;
+}
+
+.btn:hover{
+  transition: 0.8s ease;  
+}
+
+.btn:hover span{
+  width: 1000px;
+  height: 1000px;
+}
