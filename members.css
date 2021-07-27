@@ -210,6 +210,8 @@ nav .fa{
   
   .box{
   height: 0%;
+  width: 0%;
+  display: none;
   }
   
   .text h1{
