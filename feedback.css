@@ -267,7 +267,7 @@ nav img{
   content:'';
   width: 0%;
   height: 2px;
-  background: #ff0000;
+  background: #fff;
   display: block;
   margin: auto;
   transition: 0.6s;
