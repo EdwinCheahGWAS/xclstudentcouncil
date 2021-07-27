@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/style.css"
+    <meta name="viewport" content="with=device-width, initial scale=1.0">
+    <title>
+      Updates
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="/index.html"><img src="/favicon-32x32.png" alt="logo"></a>
+        <div class="menupages" id="menupages">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+            <li><a href="https://xclstudentcouncil.vercel.app/">HOME</a></li>
+            <li><a href="https://xclstudentcouncil.vercel.app/members.html">MEMBERS</a></li>
+            <li><a href="#">UPDATES</a></li>
+            <li><a href="https://xclstudentcouncil.vercel.app/feedback.html">FEEDBACK</a></li>
+            <li><a href="#">FOLLOW US</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+      </nav>
+      
+      <div class="text">
+        <h1>XCL Student Council 2021/22</h1>
+      </div>
+    </section>
+  <!--News-->
+    <section class="updates">
+      <img src="/laptop.png" alt="image">
+      <h1>Blah Blah Blah</h1>
+      <a href="#" class="btn"><span></span>Read more ➤</a>
+  </section>
+    
+    <section class="updates">
+      <img src="/laptop.png" alt="image">
+      <h1>Blah Blah Blah</h1>
+      <a href="#" class="btn"><span></span>Read more ➤</a>
+  </section>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function(e){
+        $('.button').on('mouseenter', function(e){
+          x = e.pageX = $(this).offset().left;
+          y = e.pageY = $(this).offset().top;
+        $(this).find('span').css({top:})
+          })
+        })
+    </script>
+    <script>
+      $(document).ready(function(e){
+        $('.button').on('mouseout', function(e){
+          x = e.pageX = $(this).offset().left;
+          y = e.pageY = $(this).offset().top;
+        $(this).find('span').css({top:})
+          })
+        })
+  </script>
+      
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function(e){
+        $('.btn').on('mouseenter', function(e){
+          x = e.pageX = $(this).offset().left;
+          y = e.pageY = $(this).offset().top;
+        $(this).find('span').css({top:})
+          })
+        })
+    </script>
+    
+    <script>
+      $(document).ready(function(e){
+        $('.btn').on('mouseout', function(e){
+          x = e.pageX = $(this).offset().left;
+          y = e.pageY = $(this).offset().top;
+        $(this).find('span').css({top:})
+          })
+        })
+  </script>
+    
+  <script>
+    var menupages = document.getElementById("menupages");
+    
+    function showMenu(){
+      menupages.style.right = "0" ;
+    }
+    function hideMenu(){
+      menupages.style.right = "-200px" ;
+    }
+  </script>
+  </body>
+</html>
