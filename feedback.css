@@ -3,331 +3,172 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: "Poppins";
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
-
-.header{
-  height: 60vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(https://xcledu.com/wp-content/uploads/overlay-school-gems-placeholder-m.jpg);
-  background-size: cover;
-  position: relative;
-  overflow: hidden;
-}
-
-.header .wave{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: url(https://lh6.googleusercontent.com/6XHyP_YX8Oe4dK1yZ9M9o-ZZ7GsRbthoYYXM04VGSl-xpN0jsd8hCM9SjmogJEozMqwiYleBat9qLUr7psIE=w1918-h898-rw);
-  background-size: 1000px 100px;
-}
-
-.header .wave.wave1{
-  animation: animate 30s linear infinite;
-  z-index: 5;
-  animation-delay: 0s;
-  bottom: 0;
-}
-
-.header .wave.wave2{
-  animation: animate2 15s linear infinite;
-  z-index: 4;
-  opacity: 0.5;
-  animation-delay: -5s;
-  bottom: 10px;
-}
-
-.header .wave.wave3{
-  animation: animate 30s linear infinite;
-  z-index: 3;
-  opacity: 0.2;
-  animation-delay: -2s;
-  bottom: 15px;
-}
-
-.header .wave.wave4{
-  animation: animate2 15s linear infinite;
-  z-index: 2;
-  opacity: 0.7;
-  animation-delay: -5s;
-  bottom: 20px;
-}
-
-nav img{
-  height: 50px;
-  width: 50px;
-}
-
-@keyframes animate{
-  0%{
-    background-position-x: 0;
-  }
-  
-  100%{
-    background-position-x: 1000px;
-  }
-}
-
-@keyframes animate2{
-  0%{
-    background-position-x: 0;
-  }
-  
-  100%{
-    background-position-x: -1000px;
-  }
-}
-
-nav{
-  display: flex;
-  padding: 2% 6%;
-  justify-content: space-between;
-  align-items: center
-}
-
-.menupages{
-  flex: 1;
-  text-align: right;
-}
-
-.menupages ul li{
-  list-style: none;
-  display: inline-block;
-  padding: 8px 12px;
-  position: relative;
-}
-
-.menupages ul li::after{
-  content:'';
-  width: 0%;
-  height: 2px;
-  background: #ff0000;
-  display: block;
-  margin: auto;
-  transition: 0.6s;
-}
-
-.menupages ul li a{
-  color: #fff;
-  text-decoration: none;
-  font-size: 13px;
-}
-
-.menupages ul li:hover::after{
-  width: 100%;
-}
-
-.text{
-  width: 90%;
-  color: #fff;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  position: absolute;
-  text-align: center;
-}
-
-.members{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+body{
+  background: #FF0000;
+  padding: 0 10px;
   height: 100%;
 }
-.members h3{
+.container{
+  max-width: 750px;
+  width: 100%;
+  margin: 15px auto;
+  background: #fff;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
+  padding: 30px;
+}
+
+.container .title{
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: #FF0000;
+  text-transform: uppercase;
   text-align: center;
-  color: #ff0000;
-  font-size: 30px;
-  margin-top: 30px;
 }
 
-.members .leadership h3{
-  top: 10%
+.container .form{
+  width: 100%;
 }
 
-.text h1{
-  font-size: 40px;
+.container .form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
 }
 
-.text p{
-  margin: 10px 0 40px;
-  font-size: 20px;
+.container .form .inputfield label{
+   width: 200px;
+   color: #757575;
+   margin-right: 10px;
+  font-size: 14px;
 }
 
-.button{
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  border: 2px solid #fff;
-  margin: 10px;
-  padding: 10px 30px;
-  font-size: 20px;
-  border-radius: 30px;
-  background: transparent;
+.container .form .inputfield .input,
+.container .form .inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.container .form .inputfield .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+.container .form .inputfield .custom_select{
   position: relative;
-  cursor: pointer;
-  overflow: hidden;
+  width: 100%;
+  height: 37px;
 }
 
-.button span{
+.container .form .inputfield .custom_select:before{
+  content: "";
   position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #FF0000 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.container .form .inputfield .custom_select select{
+  -webkit-appearance: none;
+  -moz-appearance:   none;
+  appearance:        none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+
+
+.container .form .inputfield .input:focus,
+.container .form .inputfield .textarea:focus,
+.container .form .inputfield .custom_select select:focus{
+  border: 1px solid #FF0000;
+}
+
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #FF0000;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+.container .form .inputfield p{
+   font-size: 14px;
+   color: #757575;
+}
+.container .form .inputfield .check{
+  width: 15px;
+  height: 15px;
+  position: relative;
   display: block;
-  width: 0px;
-  height: 0px;
-  transform: translate(-50%,-50%);
-  border-radius: 50%;
-  background: #ff0000;
-  transition: width 0.8s, height 0.8s;
-  z-index: -1;
+  cursor: pointer;
+}
+.container .form .inputfield .check input[type="checkbox"]{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
 }
 
-.button:hover{
-  transition: 0.8s ease;  
+.container .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+  display: block;
 }
 
-.button:hover span{
-  width: 1000px;
-  height: 1000px;
+.container .form .inputfield:last-child{
+  margin-bottom: 0;
 }
 
 nav .fa{
-  display: none;
+  display:none;
 }
 
-@media(max-width: 1000px){
-  .header{
-  height: 50vh;
+button[type="submit"] {
   width: 100%;
-  background: linear-gradient(#8b0000,#ff0000);
-  background-size: cover;
-  position: relative;
-  overflow: hidden;
-  }
-  
-  .text h1{
-    font-size: 70px;
-  }
-  
-  .menu-pages ul li{
-    display: block;
-  }
-  
-  .menupages{
-    position: absolute;
-    background: #ff0000;
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: -200px;
-    text-align: left;
-    z-index: 5;
-    transition: 1s;
-  }
-  
-  .individual{
-  width: 150px;
-  height: 150px;
-  }
-    nav .fa{
-      display: block;
-      color: #fff;
-      margin: 10px;
-      font-size: 20px;
-      cursor: pointer;
-    }
-    
-    .menupages ul{
-      padding: 30px;
-    } 
-  .menupages ul a{
-  font-size: 30px;
-  }
-    .team{
-    justify-content: center;
-    align-items: center;
-    }
-}
-
-.team{
-  display: flex;
-  justify-content: center;
-  align-items:center;
-}
-
-.individual{
-  margin: 10px;
-  width: 180px;
-  height: 180px;
-  padding: 24px;
-  background: #fff;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  transition: 0.6s ease-out;
-}
-
-.individual:hover{
-  box-shadow: 0 10px 10px rgba(0,0,0,0.5);
-}
-
-.individual:hover:before{
-  opacity: 1;
-}
-
-.individual:hover .description{
-  opacity: 1;
-}
-
-.individual:before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to top, #000, transparent);
-  z-index: 2;
-  transition: 0.5s;
-  opacity: 0;
-}
-.individual img{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.individual .description{
-  position: relative;
-  z-index: 3;
+   padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background:  #FF0000;
   color: #fff;
-  opacity: 0;
-  transform: translateY(10px);
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
 }
-
-.individual h2{
-  font-size: 18px;
-}
-
-.individual p{
-  font-size: 12px;
+button[type="submit"]:hover {
+  background-color: 	#ff3d41;
 }
 
 .box{
   position: absolute;
-  top: 100;
+  top: 0;
   left: 0;
   width: 100%;
-  height: 310%;
+  height: 100%;
   overflow: hidden;
-  z-index: 5;
+  z-index: -1;
 }
 
 .box li{
@@ -336,11 +177,11 @@ nav .fa{
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgba(255, 0, 0 ,0.4);
+  background: rgba(117, 91, 234 ,0.2);
   animation: bg-animation 20s linear infinite;
   bottom: -150px;
-  box-shadow: 0 0 10px  rgba(255, 0, 0 ,0.5),
-  0 0 20px  rgba(255, 0, 0 ,0.5);
+  box-shadow: 0 0 10px #fff,
+  0 0 20px #fff;
 }
 
 .box li:nth-child(1){
@@ -386,58 +227,112 @@ nav .fa{
   height: 110px;
   animation-delay: 3.5s;
 }
- 
-.box li:nth-child(7){
-  left: 85%;
-  width: 80px;
-  height: 80px;
-  animation-delay: 10s;
-}
-
-.box li:nth-child(8){
-  left: 12%;
-  width: 30px;
-  height: 30px;
-  animation-delay: 11.5s;
-  animation-duration: 10s;
-}
-
-.box li:nth-child(9){
-  left: 85%;
-  width: 100px;
-  height: 100px;
-  animation-delay: 15.5s;
-}
-
-.box li:nth-child(10){
-  left: 80%;
-  width: 150px;
-  height: 150px;
-  animation-delay: 10s;
-  animation-duration: 15s;
-}
-
-.box li:nth-child(11){
-  left: 65%;
-  width: 40px;
-  height: 40px;
-  animation-delay: 10s;
-}
   
-.box li:nth-child(12){
-  left: 12%;
-  width: 110px;
-  height: 110px;
-  animation-delay: 13.5s;
-}
   @keyframes bg-animation{
     0%{
-    transform: translateY(-1600px) rotate(0deg);
-    opacity: 0.2;
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
     }
     
     100%{
-    transform: translateY(0) rotate(540deg);
+    transform: translateY(-900px) rotate(540deg);
     opacity: 1;
     }
   }
+
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center
+}
+
+nav img{
+  width: 50px;
+}
+
+.menupages{
+  flex: 1;
+  text-align: right;
+}
+
+.menupages ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.menupages ul li::after{
+  content:'';
+  width: 0%;
+  height: 2px;
+  background: #ff0000;
+  display: block;
+  margin: auto;
+  transition: 0.6s;
+}
+
+.menupages ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.menupages ul li:hover::after{
+  width: 100%;
+}
+
+@media(max-width: 1000px){
+  .container .form .inputfield{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .container .form .inputfield label{
+    margin-bottom: 5px;
+  }
+  
+  .container {
+  margin-top: 200px;
+  }
+  
+  .container .form .inputfield.terms{
+    flex-direction: row;
+  }
+     
+  .menu-pages ul li{
+    display: block;
+  }
+  
+  .menupages{
+    position: absolute;
+    background: #ff0000;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  
+    nav .fa{
+      display: block;
+      color: #fff;
+      margin: 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    
+    .menupages ul{
+      padding: 30px;
+    } 
+  
+  .container .title{
+    font-size: 50px;
+  }
+  
+  .container .form .inputfield label{
+  font-size: 25px;
+}
+}
