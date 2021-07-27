@@ -117,40 +117,7 @@ nav .fa{
   display: none;
 }
 
-@media(max-width: 1000px){
-  
-  .menu-pages ul li{
-    display: block;
-  }
-  
-  .menupages{
-    position: absolute;
-    background: #ff0000;
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: -200px;
-    text-align: left;
-    z-index: 2;
-    transition: 1s;
-  }
-  
-    nav .fa{
-      display: block;
-      color: #fff;
-      margin: 10px;
-      font-size: 20px;
-      cursor: pointer;
-    }
-    
-    .menupages ul{
-      padding: 30px;
-    } 
-  
-  .menupages ul a{
-  font-size: 30px;
-  }
-  
+@media(max-width: 1000px){  
     .row{
     flex-direction: column;
     }
