@@ -335,4 +335,8 @@ nav img{
   .container .form .inputfield label{
   font-size: 25px;
 }
+  
+  .box{
+  height: 0%;
+  }
 }
