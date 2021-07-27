@@ -432,7 +432,7 @@ nav .fa{
 }
   @keyframes bg-animation{
     0%{
-    transform: translateY(-1600px) rotate(0deg);
+    transform: translateY(-2000px) rotate(0deg);
     opacity: 0;
     }
     
