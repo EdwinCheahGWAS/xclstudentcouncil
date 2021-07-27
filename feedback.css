@@ -293,40 +293,12 @@ nav img{
   }
   
   .container {
-  margin-top: 50px;
+  margin-top: 150px;
   }
   
   .container .form .inputfield.terms{
     flex-direction: row;
   }
-     
-  .menu-pages ul li{
-    display: block;
-  }
-  
-  .menupages{
-    position: absolute;
-    background: #ff0000;
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: -200px;
-    text-align: left;
-    z-index: 2;
-    transition: 1s;
-  }
-  
-    nav .fa{
-      display: block;
-      color: #fff;
-      margin: 10px;
-      font-size: 20px;
-      cursor: pointer;
-    }
-    
-    .menupages ul{
-      padding: 30px;
-    } 
   
   .container .title{
     font-size: 50px;
