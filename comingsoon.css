@@ -108,6 +108,7 @@ nav img{
 .menupages{
   flex: 1;
   text-align: right;
+  z-index: 3
 }
 
 .menupages ul li{
