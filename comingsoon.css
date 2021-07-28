@@ -82,6 +82,18 @@
   animation-delay: 3.5s;
 }
 
+@keyframes bg-animation{
+    0%{
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+    }
+    
+    100%{
+    transform: translateY(-900px) rotate(540deg);
+    opacity: 1;
+    }
+  }
+
 nav{
   display: flex;
   padding: 2% 6%;
