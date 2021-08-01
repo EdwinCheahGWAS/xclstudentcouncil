@@ -1,4 +1,4 @@
-d@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
 
 *{
   margin: 0;
@@ -120,11 +120,7 @@ nav .fa{
     .row{
     flex-direction: column;
     }
-  
-  .menupages ul li a{
-  font-size: 30px;
   }
- }
 
 .bts{
   width: 80%;
@@ -229,4 +225,3 @@ nav .fa{
   width: 1000px;
   height: 1000px;
 }
-
