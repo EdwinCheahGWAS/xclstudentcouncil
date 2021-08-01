@@ -120,6 +120,11 @@ nav .fa{
     .row{
     flex-direction: column;
     }
+  
+    .menupages ul li a{
+    color: #fff;
+    font-size: 20px;
+    }
   }
 
 .bts{
