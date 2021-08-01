@@ -233,9 +233,12 @@ nav .fa{
     .menupages ul{
       padding: 30px;
     } 
-  .menupages ul a{
-  font-size: 50px;
+  
+ .menupages ul li a{
+    color: #fff;
+    font-size: 25px;
   }
+   
     .team{
     justify-content: center;
     align-items: center;
