@@ -88,7 +88,6 @@ nav{
   justify-content: space-between;
   align-items: center
 }
-
 .menupages{
   flex: 1;
   text-align: right;
@@ -114,7 +113,7 @@ nav{
 .menupages ul li a{
   color: #fff;
   text-decoration: none;
-  font-size: 1.5vw;
+  font-size: 13px;
 }
 
 .menupages ul li:hover::after{
