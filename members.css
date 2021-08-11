@@ -206,6 +206,11 @@ nav .fa{
   position: relative;
   overflow: hidden;
   }
+  
+  .menupages ul li a{
+    color: #fff;
+    font-size: 30px !important;
+    }
 
   .individual{
     margin: 10px;
