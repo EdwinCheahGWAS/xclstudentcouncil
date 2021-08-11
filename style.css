@@ -51,7 +51,7 @@ nav img{
 .menupages ul li a{
   color: #fff;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 1.5vw;
 }
 
 .menupages ul li:hover::after{
@@ -74,7 +74,7 @@ nav img{
 
 .text p{
   margin: 10px 0 40px;
-  font-size: 20px;
+  font-size: 2vw;
 }
 
 .button{
@@ -104,7 +104,7 @@ nav img{
 }
 
 .button:hover{
-  transition: 0.8s ease;  
+  transition: 0.8s ease;
 }
 
 .button:hover span{
@@ -119,11 +119,6 @@ nav .fa{
 @media(max-width: 1000px){
     .row{
     flex-direction: column;
-    }
-  
-    .menupages ul li a{
-    color: #fff;
-    font-size: 25px;
     }
   }
 
@@ -142,7 +137,7 @@ nav .fa{
   margin-bottom: 5%;
   text-align: center;
   color: #fff;
-  background: #ff0000; 
+  background: #ff0000;
   transition: 0.5s;
   box-sizing: border-box;
 }
@@ -223,7 +218,7 @@ nav .fa{
 }
 
 .btn:hover{
-  transition: 0.8s ease;  
+  transition: 0.8s ease;
 }
 
 .btn:hover span{
