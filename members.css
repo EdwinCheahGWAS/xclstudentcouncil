@@ -66,7 +66,7 @@ nav img{
   0%{
     background-position-x: 0;
   }
-  
+
   100%{
     background-position-x: 1000px;
   }
@@ -76,7 +76,7 @@ nav img{
   0%{
     background-position-x: 0;
   }
-  
+
   100%{
     background-position-x: -1000px;
   }
@@ -114,7 +114,7 @@ nav{
 .menupages ul li a{
   color: #fff;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 1.5vw;
 }
 
 .menupages ul li:hover::after{
@@ -141,7 +141,7 @@ nav{
 .members h3{
   text-align: center;
   color: #ff0000;
-  font-size: 30px;
+  font-size: 3vw;
   margin-top: 30px;
 }
 
@@ -150,12 +150,12 @@ nav{
 }
 
 .text h1{
-  font-size: 40px;
+  font-size: 5vw !important;
 }
 
 .text p{
-  margin: 10px 0 40px;
-  font-size: 20px;
+  margin: 0.125vw 0 0.5vw !important;
+  font-size: 20px !important;
 }
 
 .button{
@@ -186,7 +186,7 @@ nav{
 }
 
 .button:hover{
-  transition: 0.8s ease;  
+  transition: 0.8s ease;
 }
 
 .button:hover span{
@@ -200,28 +200,33 @@ nav .fa{
 
 @media(max-width: 1000px){
   .header{
-  height: 50vh;
+  height: 40vh;
   width: 100%;
   background: linear-gradient(#8b0000,#ff0000);
   background-size: cover;
   position: relative;
   overflow: hidden;
   }
-  
+
+  .individual{
+    margin: 10px;
+    width: 13vw;
+    height: 13vw;
+    padding: 24px;
+    background: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transition: none;
+  }
+
   .box{
   height: 0%;
   width: 0%;
   display: none;
   }
-  
-  .text h1{
-    font-size: 70px;
-  }
-  
-  .individual{
-  width: 150px;
-  height: 150px;
-  }
+
     nav .fa{
       display: block;
       color: #fff;
@@ -229,19 +234,22 @@ nav .fa{
       font-size: 20px;
       cursor: pointer;
     }
-    
+
     .menupages ul{
       padding: 30px;
-    } 
-  
- .menupages ul li a{
-    color: #fff;
-    font-size: 25px;
-  }
-   
+    }
+
     .team{
     justify-content: center;
     align-items: center;
+    }
+
+    .individual:before{
+  opacity: 0.5 !important;
+}
+
+    .individual .description{
+    opacity: 1 !important;
     }
 }
 
@@ -253,8 +261,8 @@ nav .fa{
 
 .individual{
   margin: 10px;
-  width: 180px;
-  height: 180px;
+  width: 13vw;
+  height: 13vw;
   padding: 24px;
   background: #fff;
   position: relative;
@@ -306,11 +314,12 @@ nav .fa{
 }
 
 .individual h2{
-  font-size: 18px;
+  font-size: 1.75vw;
+  text-shadow: 0 0 0.625px red, 0 0 1.25px red, 0 0 2.5px red;
 }
 
 .individual p{
-  font-size: 12px;
+  font-size: 0.75vw;
 }
 
 .box{
@@ -318,7 +327,7 @@ nav .fa{
   top: 0;
   left: 0;
   width: 100%;
-  height: 260%;
+  height: 270%;
   overflow: hidden;
   z-index: -1;
 }
@@ -372,14 +381,14 @@ nav .fa{
   height: 40px;
   animation-delay: 0s;
 }
-  
+
 .box li:nth-child(6){
   left: 12%;
   width: 110px;
   height: 110px;
   animation-delay: 3.5s;
 }
- 
+
 .box li:nth-child(7){
   left: 85%;
   width: 80px;
@@ -416,7 +425,7 @@ nav .fa{
   height: 40px;
   animation-delay: 10s;
 }
-  
+
 .box li:nth-child(12){
   left: 12%;
   width: 110px;
@@ -425,10 +434,10 @@ nav .fa{
 }
   @keyframes bg-animation{
     0%{
-    transform: translateY(-1000px) rotate(0deg);
+    transform: translateY(-2000px) rotate(0deg);
     opacity: 0;
     }
-    
+
     100%{
     transform: translateY(0) rotate(540deg);
     opacity: 1;
