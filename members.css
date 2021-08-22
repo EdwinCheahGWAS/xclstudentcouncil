@@ -205,9 +205,13 @@ nav .fa{
   overflow: hidden;
   }
   
+  .box{
+  height: 0%;
+  }
+  
   .menupages ul li a{
     color: #fff;
-    font-size: 2vw !important;
+    font-size: 1.8vw !important;
     }
 
   .individual{
