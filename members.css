@@ -201,15 +201,13 @@ nav .fa{
   .header{
   height: 40vh;
   width: 100%;
-  background: linear-gradient(#8b0000,#ff0000);
-  background-size: cover;
   position: relative;
   overflow: hidden;
   }
   
   .menupages ul li a{
     color: #fff;
-    font-size: 25px !important;
+    font-size: 2vw !important;
     }
 
   .individual{
@@ -223,12 +221,6 @@ nav .fa{
     justify-content: center;
     align-items: flex-end;
     transition: none;
-  }
-
-  .box{
-  height: 0%;
-  width: 0%;
-  display: none;
   }
 
     nav .fa{
@@ -331,7 +323,7 @@ nav .fa{
   top: 0;
   left: 0;
   width: 100%;
-  height: 270%;
+  height: 290%;
   overflow: hidden;
   z-index: -1;
 }
